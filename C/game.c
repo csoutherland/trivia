@@ -56,16 +56,10 @@ game_new ()
       sprintf (pop_questions[i], "Pop Question %d", i);
       sprintf (science_questions[i], "Science Question %d", i);
       sprintf (sports_questions[i], "Sports Question %d", i);
-      create_rock_question (i);
+      sprintf (rock_questions[i], "Rock Question %d", i);
     }
 
   return game;
-}
-
-void
-create_rock_question (int index)
-{
-  sprintf (rock_questions[index], "Rock Question %d", index);
 }
 
 bool
